@@ -86,13 +86,13 @@ body, html{
     clear:both;
     margin-top:50px!important;
 }
-.what_we_do{
+.slider_area{
     border-bottom: 1px solid #0171BB;
     min-height:500px;
     
 }
 @media (max-width: 767px) {
-   .what_we_do{
+   .slider_area{
     border-bottom: 1px solid #0171BB;
     min-height:450px;
 }
@@ -103,9 +103,9 @@ body, html{
 
 }
 @media only screen and (min-width : 1200px) {
-        .what_we_do{
+        .slider_area{
     border-bottom: 1px solid #0171BB;
-    min-height:550px;
+    min-height:500px;
     height:100%;
     
 }
