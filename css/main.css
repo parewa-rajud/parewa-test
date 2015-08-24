@@ -1,0 +1,285 @@
+.center-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+body, html{
+    margin:0;
+    overflow-x:hidden; 
+}
+.logo {
+    height:200%;
+}
+.head_top{
+	background: url(../images/banner_main.jpg) no-repeat ; 
+    min-height:600px;
+} 
+
+.navbar {
+    border: none;
+}
+
+.navbar-custom .navbar-toggle, .navbar-custom .navbar-toggle:hover,  .navbar-custom .navbar-toggle:focus{
+    background-color: #0171BB;
+}
+
+.navbar-custom {
+    background: transparent;
+}
+
+.nav-custom{
+    margin-right:15px;
+}
+
+.navbar-custom .icon-bar{
+    background: #fff;
+}
+
+.navbar-custom .navbar-collapse {
+    border: none;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color: #0171BB;
+    
+}
+.navbar-custom .navbar-nav > li:hover{
+    background-color: #0171BB;
+}
+
+.header_first_text{
+	margin-top:175px;
+	text-align: center;
+    line-height: 37px;
+}
+.about_us_text{
+    text-align: right;
+    font-weight: bold;
+    font-size: 22px;
+    background: url(../images/parewalogo.png)no-repeat center ; 
+    background-size:100% auto;
+}
+
+.about p{
+    margin:0 20px;
+}
+
+
+.container-fluid{
+  width:100%;
+  margin:0px;
+
+}
+.what_we_do_for_mobile{
+    background-color: #0171BB; 
+    padding:10px;
+    
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    color:#fff;
+    clear:both;
+}
+.serv{
+    clear:both;
+    margin-top:50px!important;
+}
+.what_we_do{
+    border-bottom: 1px solid #0171BB;
+    min-height:500px;
+    
+}
+@media (max-width: 767px) {
+   .what_we_do{
+    border-bottom: 1px solid #0171BB;
+    min-height:450px;
+}
+
+#our_products{
+    min-height:250px;
+}
+
+}
+@media only screen and (min-width : 1200px) {
+        .what_we_do{
+    border-bottom: 1px solid #0171BB;
+    min-height:600px;
+    height:100%;
+    
+}
+    }
+.what_we_do_text{
+	background-color: #0171BB; 
+    text-align: right;
+    font-weight: bold;
+    font-size: 22px;
+    color:#fff;
+    padding-top:10px;
+
+}
+.slider{   
+    
+    height:100%;
+    width:100%;
+}
+#our_products{
+    min-height:400px;
+}
+#our_products_label{
+	background-color:#0171BB;
+    text-align: right;
+    font-weight: bold;
+    font-size: 22px;
+    color:#fff;
+    padding-top:5px;
+}
+.our_product_below_text{
+	text-align: center;
+}
+.adhuro{
+	text-align: center;
+}
+.our_product .img-responsive {
+    margin: 0 auto;
+}
+
+.footer_new{
+	background-color:#3a3a3a;
+    padding-top:20px;
+}
+.footer_new li {
+    margin: 0;
+    padding: 0.2em;
+}
+.first_txt{
+	color:#0171BB;
+	font-size:25px;
+}
+.navbar_bottom{
+    margin-top:14px;
+    margin-bottom:15px;
+    color:white;
+}
+.social_media{
+    margin-top:14px;
+    margin-bottom:15px;
+}
+
+.social_media ul{
+    margin-left:10px;
+}
+
+.sec_txt{
+    color:#0171BB;
+	font-weight: bold;
+	font-size:42px;
+
+}
+.second_txt{
+    background-color: #3a3a3a;
+    color:white;
+}
+.third_txt{
+    background-color:#0171BB;
+	font-size:20px;
+    color:#fff;
+    padding:5px;
+
+}
+.product_text p{
+    padding:0 20px;
+}
+textarea {    
+    position: relative;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+}
+
+.involvements {
+    font-size:28px;
+    font-style: italic;
+    color:#909090 ;
+}
+
+.involvement{
+       min-height:60px;
+}
+#contact{
+    
+    color:#fff;
+
+}
+#contact_form{
+    
+    background-color: #3a3a3a;
+    
+ }
+
+#contact_text{
+    font-weight: bold;
+    font-size: 22px;
+    margin-left:20px;
+}
+#contact_text p{
+    padding-top:10px;
+    color:#fff;
+    }
+.nav_bottom > li> a{
+    color:#fff; 
+    
+}
+.row { 
+    margin: 0; 
+    padding: 0; 
+}
+.first_below_slider{
+    font-size:20px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.form-control{
+    background-color:#3a3a3a;
+    color:white;
+}
+.form-group {
+    margin-left: 18px;
+    margin-right:18px;
+}
+.text-msg{
+    margin-left:5px;
+}
+textarea{
+    position:inherit;
+}
+
+#carouselButtons {
+    margin-left: 100px;
+    position: absolute;
+    bottom: 0px;
+}
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    color:black;
+}
+#homeCarousel{
+    min-height:450px;
+}
+.carousel-indicators{
+    color:black;
+}
+.carousel-title{
+    font-weight: bold;
+    color:#606060;
+    font-size: 22px;
+}
+.carousel-caption p{
+    font-size:16px;
+    color:#606060;
+}

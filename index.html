@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Parewalabs</title>
+    <link rel="stylesheet" href="css/bootstrap.css" >
+    <link rel="stylesheet" href="css/main.css" >
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        resize_elements();        
+    });
+
+    function resize_elements(){
+        var resizerElement = $('.height-resize');
+        resizerElement.each(function(array, element, index){
+            var resizerSiblingElement = $(element).next();
+            var mainHeight = $(element).height();
+            var siblingHeight = resizerSiblingElement.height();
+            var maxHeight = mainHeight > siblingHeight ? mainHeight : siblingHeight;
+            $(element).height(maxHeight);
+            resizerSiblingElement.height(maxHeight);
+        });
+    }
+
+    $(window).resize(function(){
+        resize_elements();
+    });
+
+</script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="head_top">
+            <nav class="navbar navbar-inverse navbar-custom navbar-static-top">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img class="img-responsive logo" src="images/logo.png" /></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right nav-custom">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a href="#products">Products</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="header_first_text">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <div class="row first_txt">WE PRODUCE</div>
+                        <div class="row sec_txt">PROFESSIONAL</div>
+                        <div class="row">
+                            <span class="third_txt">
+                               SOLUTIONS TARGETING NEPALI MARKET
+                           </span> 
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+        <div class="row about_us" id="about">
+
+        <div class="what_we_do_for_mobile visible-xs-block col-sm-2">ABOUT US
+        </div>
+        <div class="col-md-2 hidden-xs about_us_text height-resize">ABOUT US
+        </div>
+
+        <div class="col-md-10">
+            <div class="row">
+                <div class="col-md-6 center-align about height-resize" style="min-height:200px">
+                   <p>Parewa Labs is a startup founded by Engineers from top engineering institutes of Nepal and India. We are a team of professionals building awesome software products targeting global market. We strive to use the power of technology to solve real, pressing problems one at a time in elegant cost effective ways and create opportunities for everyone who associate with us along the way.
+
+                   </p>
+               </div>
+               <div class="col-md-6 ">
+                <img src="images/small2.jpg" class="img-responsive" style="width:100%;height:100%" />
+            </div>
+        </div>
+
+
+        
+          <div class="row visible-xs-block">                
+            <div class="col-sm-6 center-align about second_txt " style="min-height:200px">
+               <p>  We take an active approach in understanding you and your business, your industry and target market, as well as your competition to ensure that every design element works towards your business marketing goals. Our team of SEO and SMO experts will help bring your company closer to Google and your customers on social media.</p>
+           </div>
+           <div class="col-sm-6">
+            <img src="images/small1.jpg" class="img-responsive" style="width:100%; min-height:200px; height:100%" />
+        </div>
+    </div>
+    <div class="row hidden-xs">
+            <div class="col-md-6 height-resize">
+                <img src="images/small1.jpg" class="img-responsive"  style="width:100%; height:100%" id="second_image"/>
+            </div>
+            <div class="col-md-6 center-align about second_txt" style="min-height:200px">
+
+              <p> We take an active approach in understanding you and your business, your industry and target market, as well as your competition to ensure that every design element works towards your business marketing goals. Our team of SEO and SMO experts will help bring your company closer to Google and your customers on social media.</p>
+              </div>
+
+          </div>
+
+</div>
+</div>
+
+<div class="row what_we_do" id="services">
+    <div class="what_we_do_for_mobile serv visible-xs-block col-sm-2">
+        WHAT WE DO
+    </div>
+    <div class="col-md-2 hidden-xs what_we_do_text height-resize">
+
+        WHAT WE DO &nbsp;&nbsp;&nbsp;
+
+    </div>
+    <div class="col-md-10 slider_area">
+        <div class="slider">            
+            <!-- Carousel -->
+                <div id="myCarousel" data-ride="carousel" class="carousel slide">
+                    <!-- Menu -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <!-- Items -->
+                    <div class="carousel-inner">
+                        <!-- Item 1 -->
+                        <div class="item active">
+                            <img src="simg/webpage-banner1.png" />
+                            <div class="container">
+                                <div class="carousel-caption">
+                                   <div class="carousel-title">Web Design and Development</div>
+
+                                   <p>Our web design and web development processes have been tweaked, optimized and improved over the years of helping businesses get online.</p>
+
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Item 2 -->
+                       <div class="item">
+                        <img src="simg/webpage-banner2.png" />
+                        <div class="container">
+                            <div class="carousel-caption">
+                               <div class="carousel-title">Graphics and Video</div>
+
+                               <p>We have extensive experience in shooting and editing of videos for teasers, documenaries, promotional content, digital walkthroughs and PSAs.</p>
+
+                           </div>
+                       </div>
+                   </div>
+                   <!-- Item 3 -->
+                   <div class="item">
+                    <img src="simg/webpage-banner3.png" />
+                    <div class="container">
+                        <div class="carousel-caption">
+                           <div class="carousel-title">3D Simulation and Game Development</div>
+
+                           <p>We are one of very few companies in Nepal actively working on 3D simulation projects and familiar with 3D gaming frameworks like Unreal & Torque  3D.</p>
+
+                       </div>
+                   </div>
+               </div>
+               <div class="item">
+                <img src="simg/webpage-banner4.png" />
+                <div class="container">
+                    <div class="carousel-caption">
+                       <div class="carousel-title">Content Creation and Online Marketing</div>
+
+                       <p>Everything from concept to strategy and to execution, we picture your users in our mind and we create content based on in-depth research.</p>
+
+                   </div>
+               </div>
+           </div>
+
+       </div>
+       <!-- Controls --> <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+       <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a> 
+    </div>
+        </div>
+        </div>
+
+        </div>
+        </div>
+        </div>
+
+        <div class="row involvements">
+
+            <div class="col-md-3 involvement center-align">
+                ktmjs
+            </div>
+            <div class="col-md-3 involvement center-align">
+                git
+            </div>
+            <div class="col-md-3 involvement center-align">
+                php
+            </div>
+            <div class="col-md-2 involvement center-align">
+                quakemap
+            </div>
+        </div>
+
+
+
+<div class="row parewalabs">
+    <img src="images/photo-banner.jpg" class="img-responsive" />
+
+</div>
+
+
+
+<div class="row">
+    <div id="products">
+        <div class="col-sm-2 visible-xs-block what_we_do_for_mobile">
+            OUR PRODUCT
+        </div>
+        <div class="col-md-2 hidden-xs height-resize" id="our_products_label">
+
+           OUR PRODUCT &nbsp;&nbsp;&nbsp;
+
+       </div>
+       <div class="col-md-10" id="our_products">
+
+           <div class="row">
+               <div class="col-md-8 col-md-offset-2">
+                   <div class="row">
+                    <a href="http://www.adhuro.com/"><img src="images/adhuro_logo.png" class="img-responsive" /> </a>
+                </div>
+                <div class="row product_text">
+                    <p>Adhuro is a small step in our vision to address the growing disparity between living expenses and average income in Nepal. We strive to be a source of supplementary income by providing a platform to write content and earn smart passive income.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="row" id="contact">
+
+    <div class="col-md-6 google_map height-resize">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d56528.313249640705!2d85.28373184923325!3d27.68578976785775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39eb19b43b21e1f3%3A0x3a9ee28da6fe68fc!2sparewalabs.!3m2!1d27.685793999999998!2d85.3180647!5e0!3m2!1sen!2snp!4v1438943878781" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </div>
+
+    <div class="col-md-6" id="contact_form">
+        <div class="row" id="contact_text"> <p>CONTACT US </p></div>
+        <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php" role="form">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" required="required" placeholder="Name">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" required="required" placeholder="Email address">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<div class="row footer_new">
+
+    <div class="col-md-5 col-md-offset-1 navbar_bottom">
+
+        <ul class=" list-inline nav_bottom">
+            <li>
+                &nbsp;&nbsp;&nbsp;<a href="/">HOME</a>
+            </li>
+            <li>
+                | &nbsp;<a href="#about">ABOUT US  </a>
+            </li>
+            <li>
+                | &nbsp;<a href="#services">SERVICES  </a>
+            </li>
+            <li>
+                | &nbsp;<a href="#products">PRODUCTS  </a>
+            </li>
+
+            <li>
+                | &nbsp;<a href="#contact">CONTACT</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="col-md-2 col-md-offset-4 social_media">
+        <ul class=" list-inline nav_bottom">
+            <li>
+                <a href="https://www.facebook.com/parewalabs"><img src="images/facebook.png" /> </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/parewalabs"><img src="images/twitter.png" /></a>
+            </li>
+            <li>
+                <a href="https://plus.google.com/115775627622960784204/about"><img src="images/google-plus.png" /></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/parewa-labs"><img src="images/linkedin.png" /></a>
+            </li>
+
+        </ul>
+
+
+    </div>
+</div>
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+<script>
+                $(function () {
+                    $('#myCarousel').carousel({
+                        interval: 4000
+                    });
+                });
+                $(function() {
+                    $('a[href*=#]:not([href=#])').click(function() {
+                    if( $(this).attr("href")=="#myCarousel") return;//This is the exception
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+                });
+
+            </script>
+
+
+</body>
+</html>
